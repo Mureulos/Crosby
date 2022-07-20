@@ -1,0 +1,4 @@
+# Crosby
+Clone of squarespace website template made with HTML5 and CSS3
+
+![Crosby](https://user-images.githubusercontent.com/96017744/180053423-f4f69ac7-4d3d-49d4-bdaf-d02abf4beb92.png)
