@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'orpheus';
+    src: url('Orpheus Pro.otf') format('opentype');
+}
+
+*, body {
+    font-family: orpheus, sans-serif;
+}
+
+
+.banner-area-prin {
+    background-image:url(plantas-banner3.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+header .container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 45px;
+    height:90px;
+}
+
+.tit-cabecalho {
+    font-size:2em;
+}
+
+.tit-cabecalho a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.menu-lista {
+    display:flex;
+}
+
+.menu-itens {
+    margin:0 10px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.menu-itens a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.menu-itens:first-child {
+    margin-left:0;
+}
+
+.menu-itens:last-child {
+    border-bottom:1px solid #FFF;
+    padding-bottom:8px;
+}
+
+.menu-itens:last-child {
+    margin-right:0;
+}
+
+.icones-lista {
+    display:flex;
+}
+
+.icone-itens {
+    margin:0 10px;  
+}
+
+.icone-itens:first-child {
+    margin-left:0;
+}
+
+.icone-itens:last-child {
+    margin-right:0;
+}
+
+
+main .container {
+    color:#FFF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:600px;
+}
+
+.div-area-segun {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+}
+
+.tit-area-segun {
+    font-size:4em;
+    text-align:center;
+}
+
+.txt-area-segun {
+    margin:40px 0;
+    line-height:30px;
+    text-align:justify;
+}
+
+.link-area-segun {
+    background-color:#FFF;
+    color:#a8a6a1;
+    padding:20px 35px;
+    font-size:16px;
+    text-decoration:none;
+    transition:0.5s all;
+}
+
+.link-area-segun:hover {
+    opacity:0.6;
+}
+
+
+footer .container {
+    background-color:#38383b;
+    color:#FFF;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:75px 50px;
+    height:150px;
+}
+
+.div1-rodape {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.tit-rodape {
+    font-size:2em;
+}
+
+.tit-rodape a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.rodape-menu {
+    display:flex;
+}
+
+.rodape-menu-itens {
+    margin:0 10px;
+    letter-spacing:1px;
+}
+
+.rodape-menu-itens a, .txt-rodape a {
+    color:#a8a6a1;
+    border-bottom:1px solid #a8a6a1;
+    text-decoration:none;
+}
+
+.rodape-menu-itens:first-child {
+    margin-left:0;
+}
+
+.rodape-menu-itens:last-child {
+    margin-right:0;
+}
+
+.div2-rodape {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.txt-rodape {
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+
+@media (max-width:830px) {
+
+    header .container {
+        flex-direction:column;
+        padding:40px 45px 0px;
+        height:auto;
+    }
+
+    .tit-cabecalho {
+        margin-bottom:30px;
+    }
+
+    .menu-prin {
+        margin-bottom:30px;
+        font-size:14.5px;
+    }   
+
+    .tit-card-area-prin {
+        font-size:1.5em;
+    }
+
+    .div-area-prin {
+        width:100%;
+    }
+
+    footer .container {
+        align-items:center;
+        text-align:center;
+        height:auto;
+    }
+
+    .tit-rodape {
+        margin-bottom:30px;
+    }
+
+    .div1-rodape {
+        margin-bottom:30px;
+    }
+
+    .div1-rodape, .div2-rodape {
+        flex-direction:column;
+    }
+
+    .txt-rodape {
+        margin-bottom:30px;
+        line-height:30px;
+    }
+
+    .icones-lista {
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+@media (max-width:768px) {
+
+    main .container {
+        padding:0 50px;
+    }
+
+    .div-area-segun  {
+        width:100%;
+    }
+}
+
+@media (max-width:500px) {
+
+    header .container {
+        padding:50px 25px 0;
+    }
+
+    .div-area-segun {
+        padding:50px;
+        height:auto;
+    }
+
+    .link-area-segun {
+        width:100%;
+        text-align:center;
+        padding:25px 0;
+    }
+
+    .txt-area-segun {
+        text-align:center;
+    }
+
+    footer .container {
+        padding:75px 25px 75px;
+    }
+}
+
+@media (max-width:450px) {
+
+    .div-area-segun {
+        width:75%;
+    }
+}
+
+@media (max-width:425px) {
+
+    header .container {
+        padding:50px 20px 25px;
+    }
+
+    .menu-itens {
+        font-size:11.5px;
+    }
+
+    .tit-area-segun {
+        font-size:3em;
+    }
+
+    footer .container {
+        padding:75px 50px;
+        height:auto;
+    }
+
+    .rodape-menu {
+        align-items:center;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .rodape-menu-itens {
+        margin:20px 0px 20px;
+    }
+
+    .rodape-menu-itens:first-child {
+        margin-top:15px;
+    }
+
+    .rodape-menu-itens:last-child {
+        margin-bottom:15px;
+    }
+}

@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'orpheus';
+    src: url('Orpheus Pro.otf') format('opentype');
+}
+
+*, body {
+    font-family: orpheus, sans-serif;
+}
+
+
+header .container {
+    background-color:#38383b;
+    color:#FFF;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 45px;
+    height:100px;
+}
+
+.tit-cabecalho {
+    font-size:2em;
+}
+
+.tit-cabecalho a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.menu-lista {
+    display:flex;
+}
+
+.menu-itens {
+    margin:0 10px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.menu-itens a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.menu-itens:first-child {
+    margin-left:0;
+}
+
+.menu-itens:nth-child(3) {
+    border-bottom:1px solid #FFF;
+    padding-bottom:8px;
+}
+
+.menu-itens:last-child {
+    margin-right:0;
+}
+
+.icones-lista {
+    display:flex;
+}
+
+.icone-itens {
+    margin:0 10px;  
+}
+
+.icone-itens:first-child {
+    margin-left:0;
+}
+
+.icone-itens:last-child {
+    margin-right:0;
+}
+
+
+main .container {
+    background-color:#38383b;
+    color:#FFF;
+    display:flex;
+    justify-content:space-around;
+    padding:75px;
+}
+
+.card-area-prin {
+    flex-direction:column;
+    align-items:center;
+    width:45%;
+    text-align:center;
+}
+
+.card-area-prin img {
+    width:100%;
+    height:auto;
+}
+
+.txt-card-area-prin {
+    font-size:18px;
+    margin-top:25px;
+}
+
+.tit-card-area-prin {
+    font-size:2em;
+    margin:25px 0px;
+}
+
+.link-card-area-prin {
+    border-bottom:1px solid #a8a6a1;
+    color:#a8a6a1;
+    padding-bottom:2px;
+    text-decoration:none;
+}
+
+
+footer .container {
+    background-color:#38383b;
+    color:#FFF;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:33px 50px 75px;
+    height:150px;
+}
+
+.div1-rodape {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.tit-rodape {
+    font-size:2em;
+}
+
+.tit-rodape a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.rodape-menu {
+    display:flex;
+}
+
+.rodape-menu-itens {
+    margin:0 10px;
+}
+
+.rodape-menu-itens a, .txt-rodape a {
+    color:#a8a6a1;
+    border-bottom:1px solid #a8a6a1;
+    text-decoration:none;
+}
+
+.rodape-menu-itens:first-child {
+    margin-left:0;
+}
+
+.rodape-menu-itens:last-child {
+    margin-right:0;
+}
+
+.div2-rodape {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.txt-rodape {
+    margin-bottom:20px;
+}
+
+@media (max-width:830px) {
+
+    header .container {
+        flex-direction:column;
+        padding:40px 45px 0px;
+        height:auto;
+    }
+
+    .tit-cabecalho {
+        margin-bottom:30px;
+    }
+
+    .menu-prin {
+        margin-bottom:30px;
+        font-size:14.5px;
+    }   
+
+    .tit-card-area-prin {
+        font-size:1.5em;
+    }
+
+    footer .container {
+        align-items:center;
+        padding:0px 50px 75px;
+        text-align:center;
+        height:auto;
+    }
+
+    .tit-rodape {
+        margin-bottom:30px;
+    }
+
+    .div1-rodape {
+        margin-bottom:30px;
+    }
+
+    .div1-rodape, .div2-rodape {
+        flex-direction:column;
+    }
+
+    .txt-rodape {
+        margin-bottom:30px;
+        line-height:30px;
+    }
+
+    .icones-lista {
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+@media (max-width:768px) {
+
+    main .container {
+        flex-direction:column;
+    }
+
+    .card-area-prin {
+        width:100%;
+    }
+
+    .card-area-prin:first-child {
+        margin-bottom:60px;
+    }
+
+    footer .container {
+        padding:25px 50px 75px;
+    }
+}
+
+@media (max-width:500px) {
+
+    header .container {
+        padding:50px 20px 25px;
+    }
+
+    .menu-itens {
+        font-size:11.5px;
+    }
+
+    main .container {
+        padding:50px 25px;
+    }
+
+    footer .container {
+        padding:50px 30px;
+        height:auto;
+    }
+
+    .rodape-menu {
+        align-items:center;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .rodape-menu-itens {
+        margin:20px 0px 20px;
+    }
+
+    .rodape-menu-itens:first-child {
+        margin-top:15px;
+    }
+
+    .rodape-menu-itens:last-child {
+        margin-bottom:15px;
+    }
+
+    .txt-rodape {
+        line-height:32px;
+    }
+}
